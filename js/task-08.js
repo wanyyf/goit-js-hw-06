@@ -7,6 +7,7 @@ const onFormSubCkick = (evt) => {
     evt.preventDefault();
     if (emailEl.value === "" || passwordEl.value === "" ) {
         alert("Все поля должны быть заполнены ")
+        return
     }
     const formValue = {
      email: emailEl.value,
